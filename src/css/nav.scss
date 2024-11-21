@@ -1,0 +1,51 @@
+.menu {
+  position: relative;
+  z-index: 5;
+  margin-top: -26px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  & li {
+    border-left: 2px solid #242425;
+    max-width: 151px;
+    & button {
+      width: 100%;
+      font-family: $big;
+      font-size: var(--title);
+      font-weight: $big-fw;
+      letter-spacing: 0.075em;
+      text-align: left;
+      text-transform: uppercase;
+      background-color: rgb(36, 36, 37, 0.7);
+      height: 26px;
+      color: var(--white);
+      padding: 0px 10px 0 8px;
+      position: relative;
+      overflow: hidden;
+      transition: $transition;
+      &:hover {
+        background-color: var(--color-background);
+      }
+    }
+    & p {
+      opacity: 0.5;
+      font-size: 7px;
+      line-height: 6.79px;
+      padding: 8px 10px 4px 8px;
+      background-color: rgb(51, 51, 51, 0.1);
+      height: 36px;
+    }
+  }
+}
+
+.nav li.active {
+  border-color: var(--color-background);
+}
+
+.nav li button.active {
+  background-color: var(--color-background);
+}

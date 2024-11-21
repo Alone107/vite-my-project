@@ -1,0 +1,674 @@
+.hexagon,
+.hexagon::after,
+.hexagon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon {
+  transform: rotate(30deg);
+}
+
+.hexagon-2,
+.hexagon-2::after,
+.hexagon-2::before {
+  position: absolute;
+  top: 47.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-2::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-2::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-2 {
+  transform: rotate(30deg);
+}
+
+.hexagon-3,
+.hexagon-3::after,
+.hexagon-3::before {
+  position: absolute;
+  top: 49%;
+  left: 51.2%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-3::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-3::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-3 {
+  transform: rotate(30deg);
+}
+
+.hexagons {
+  position: absolute;
+  top: -5px;
+  right: 27px;
+}
+
+.hexagons-2 {
+  position: absolute;
+  top: 14px;
+  right: 27px;
+}
+.hexagons-3 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.hexagon-4,
+.hexagon-4::after,
+.hexagon-4::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-4::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-4::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-4 {
+  transform: rotate(30deg);
+}
+
+.hexagon-5,
+.hexagon-5::after,
+.hexagon-5::before {
+  position: absolute;
+  top: 47.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-5::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-5::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-5 {
+  transform: rotate(30deg);
+}
+
+.hexagon-6,
+.hexagon-6::after,
+.hexagon-6::before {
+  position: absolute;
+  top: 49%;
+  left: 51.2%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-6::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-6::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-6 {
+  transform: rotate(30deg);
+}
+
+.hexagons-4 {
+  position: absolute;
+  top: -5px;
+  right: 27px;
+}
+
+.hexagons-5 {
+  position: absolute;
+  top: 14px;
+  right: 27px;
+}
+.hexagons-6 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.hexagon-7,
+.hexagon-7::after,
+.hexagon-7::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-7::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-7::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-7 {
+  transform: rotate(30deg);
+}
+
+.hexagon-8,
+.hexagon-8::after,
+.hexagon-8::before {
+  position: absolute;
+  top: 47.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-8::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-8::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-8 {
+  transform: rotate(30deg);
+}
+
+.hexagon-9,
+.hexagon-9::after,
+.hexagon-9::before {
+  position: absolute;
+  top: 49%;
+  left: 51.2%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-9::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-9::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-9 {
+  transform: rotate(30deg);
+}
+
+.hexagons-7 {
+  position: absolute;
+  top: -5px;
+  right: 27px;
+}
+
+.hexagons-8 {
+  position: absolute;
+  top: 14px;
+  right: 27px;
+}
+.hexagons-9 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+// ----------Xegagon-----------------
+
+.hexagon-10,
+.hexagon-10::after,
+.hexagon-10::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-10::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-10::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-10 {
+  transform: rotate(30deg);
+}
+
+.hexagon-11,
+.hexagon-11::after,
+.hexagon-11::before {
+  position: absolute;
+  top: 47.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-11::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-11::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-11 {
+  transform: rotate(30deg);
+}
+
+.hexagon-12,
+.hexagon-12::after,
+.hexagon-12::before {
+  position: absolute;
+  top: 49%;
+  left: 51.2%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-12::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-12::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-12 {
+  transform: rotate(30deg);
+}
+
+.hexagons-10 {
+  position: absolute;
+  top: -5px;
+  right: 27px;
+}
+
+.hexagons-11 {
+  position: absolute;
+  top: 14px;
+  right: 27px;
+}
+.hexagons-12 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+// ----------Xegagon-----------------
+
+.hexagon-13,
+.hexagon-13::after,
+.hexagon-13::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-13::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-13::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-13 {
+  transform: rotate(30deg);
+}
+
+.hexagon-14,
+.hexagon-14::after,
+.hexagon-14::before {
+  position: absolute;
+  top: 47.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-14::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-14::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-14 {
+  transform: rotate(30deg);
+}
+
+.hexagon-15,
+.hexagon-15::after,
+.hexagon-15::before {
+  position: absolute;
+  top: 49%;
+  left: 51.2%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-15::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-15::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-15 {
+  transform: rotate(30deg);
+}
+
+.hexagons-13 {
+  position: absolute;
+  top: -5px;
+  right: 27px;
+}
+
+.hexagons-14 {
+  position: absolute;
+  top: 14px;
+  right: 27px;
+}
+.hexagons-15 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+// ----------Xegagon-----------------
+
+.hexagon-16,
+.hexagon-16::after,
+.hexagon-16::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-16::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-16::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-16 {
+  transform: rotate(30deg);
+}
+
+.hexagon-17,
+.hexagon-17::after,
+.hexagon-17::before {
+  position: absolute;
+  top: 47.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-17::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-17::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-17 {
+  transform: rotate(30deg);
+}
+
+.hexagon-18,
+.hexagon-18::after,
+.hexagon-18::before {
+  position: absolute;
+  top: 49%;
+  left: 51.2%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-18::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-18::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-18 {
+  transform: rotate(30deg);
+}
+
+.hexagons-16 {
+  position: absolute;
+  top: -5px;
+  right: 27px;
+}
+
+.hexagons-17 {
+  position: absolute;
+  top: 14px;
+  right: 27px;
+}
+.hexagons-18 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+// ----------Xegagon-----------------
+
+.hexagon-19,
+.hexagon-19::after,
+.hexagon-19::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-19::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-19::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-19 {
+  transform: rotate(30deg);
+}
+
+.hexagon-20,
+.hexagon-20::after,
+.hexagon-20::before {
+  position: absolute;
+  top: 47.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-20::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-20::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-20 {
+  transform: rotate(30deg);
+}
+
+.hexagon-21,
+.hexagon-21::after,
+.hexagon-21::before {
+  position: absolute;
+  top: 49%;
+  left: 51.2%;
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 10px;
+  border: 1px solid #000003;
+  border-top: none;
+  border-bottom: none;
+}
+.hexagon-21::after {
+  content: '';
+  transform: translate(-50%, -50%) rotate(60deg);
+}
+.hexagon-21::before {
+  content: '';
+  transform: translate(-50%, -50%) rotate(-60deg);
+}
+
+.hexagon-21 {
+  transform: rotate(30deg);
+}
+
+.hexagons-19 {
+  position: absolute;
+  top: -5px;
+  right: 27px;
+}
+
+.hexagons-20 {
+  position: absolute;
+  top: 14px;
+  right: 27px;
+}
+.hexagons-21 {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+// ------------------------------------------------------------

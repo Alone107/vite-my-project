@@ -1,0 +1,230 @@
+@import 'keyframes.scss';
+@import 'variables.scss';
+
+.challengeForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 150;
+  //   transform: translate(-50%, -50%);
+  transform: translateY(1000px);
+  transition: all 0.5s;
+  & h4 {
+    font-family: $big;
+    font-size: var(--title);
+    font-weight: $big-fw;
+    margin-bottom: 5px;
+    color: var(--white);
+  }
+  & p {
+    font-size: var(--text);
+    line-height: 15.52px;
+    color: #b2b7ba;
+    margin-bottom: 30px;
+  }
+  & form {
+    & label {
+      font-family: $big;
+      font-size: var(--title);
+      font-weight: $big-fw;
+      line-height: 21.55px;
+      letter-spacing: 0.075em;
+      display: block;
+      margin-bottom: 10px;
+      color: var(--color);
+    }
+    & input {
+      width: 100%;
+      border: 1px solid #333333;
+      background-color: #010103;
+      padding: 14px 19px;
+      margin-bottom: 30px;
+      font-family: $ice;
+      font-size: var(--text);
+      font-weight: 400;
+      line-height: 17.08px;
+      letter-spacing: 0.075em;
+      color: #7a7a7a;
+      transition: $transition;
+
+      &::placeholder {
+        font-family: $ice;
+        font-size: var(--text);
+        font-weight: 400;
+        line-height: 17.08px;
+        letter-spacing: 0.075em;
+        color: #7a7a7a;
+        text-transform: uppercase;
+        transition: $transition;
+      }
+      &:hover {
+        color: var(--white);
+        border-color: var(--white);
+      }
+      &:hover::placeholder {
+        color: var(--white);
+      }
+    }
+    & select {
+      width: 150px;
+      margin-bottom: 30px;
+      border: 1px solid #333333;
+      background-color: #010103;
+      color: #7a7a7a;
+      padding: 14px 0px 14px 6px;
+      font-family: $ice;
+      font-size: var(--text);
+      font-weight: 400;
+      line-height: 17.08px;
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+      transition: $transition;
+      cursor: pointer;
+      &:hover {
+        border-color: var(--white);
+        color: var(--white);
+      }
+      & option {
+        color: #7a7a7a;
+        font-family: $ice;
+        font-size: var(--text);
+        font-weight: 400;
+        line-height: 17.08px;
+        letter-spacing: 0.075em;
+      }
+    }
+    & textarea {
+      width: 100%;
+      min-height: 200px;
+      border: 1px solid #333333;
+      background-color: #010103;
+      padding: 14px;
+      font-family: $ice;
+      font-size: var(--text);
+      font-weight: 400;
+      line-height: 17.08px;
+      letter-spacing: 0.075em;
+      text-transform: uppercase;
+      transition: $transition;
+      color: #7a7a7a;
+      &::placeholder {
+        transition: $transition;
+      }
+      &:hover {
+        border-color: var(--white);
+        color: var(--white);
+      }
+      &:hover::placeholder {
+        color: var(--white);
+      }
+    }
+  }
+  &-block {
+    max-width: 486px;
+    width: 100%;
+    max-height: 552px;
+    height: 100%;
+    background: #e84a4a17;
+    position: relative;
+    margin-bottom: 30px;
+    clip-path: polygon(
+      1.8% 0,
+      100% 0%,
+      100% 2%,
+      100% 100%,
+      100% 236%,
+      0 121%,
+      0% 100%,
+      0 1.8%
+    );
+    &::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 8px solid #000;
+      border-right: 8px solid transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &::before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-top: 10px solid #ffffff21;
+      border-right: 10px solid transparent;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    &-box {
+      padding: 38px 32px 14px 32px;
+      width: 100%;
+      max-width: 552px;
+      overflow: hidden;
+      height: 100%;
+      position: relative;
+      border: 1px solid #ffffff21;
+    }
+  }
+  &-buttons {
+    display: flex;
+    gap: 15px;
+    &-send {
+      padding: 7px 29.5px 4px 29px;
+      background-color: var(--color);
+      text-transform: uppercase;
+      color: #000000;
+      font-family: $big;
+      font-weight: $big-fw;
+      font-size: var(--title);
+      line-height: 21.55px;
+      letter-spacing: 0.075em;
+      text-align: center;
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+        scale: 1.1;
+      }
+    }
+    &-esc {
+      padding: 7px 61px 4px 61.5px;
+      background-color: #000003;
+      text-transform: uppercase;
+      color: var(--color);
+      font-family: $big;
+      font-weight: $big-fw;
+      font-size: var(--title);
+      line-height: 21.55px;
+      letter-spacing: 0.075em;
+      text-align: center;
+      border: 1px solid #262626;
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+        scale: 1.1;
+      }
+    }
+  }
+}
+
+.challengeForm.open {
+  animation: SettingsOpen 2s forwards;
+}
+
+.challengeForm.close {
+  animation: SettingsClose 2s forwards;
+}
+
+.uncommon-option {
+  color: #5de26a !important;
+}
+.rare-option {
+  color: #429dd1 !important;
+}
+.epic-option {
+  color: #e84a4a !important;
+}
+.legendary-option {
+  color: #d4a944 !important;
+}

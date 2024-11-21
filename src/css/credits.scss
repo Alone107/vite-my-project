@@ -1,0 +1,60 @@
+@import 'variables.scss';
+@import 'keyframes.scss';
+
+.credits {
+  position: fixed;
+  padding: 5px;
+  z-index: 150;
+  transform: translateY(1000px);
+  transition: $transition;
+  & h3 {
+    font-family: $big;
+    font-weight: $big-fw;
+    margin-bottom: 5px;
+  }
+  & h5 {
+    font-size: 16px;
+    line-height: 15.52px;
+    color: #b2b7ba;
+    margin-bottom: 18px;
+  }
+  & span {
+    display: block;
+    height: 3px;
+    max-width: 469px;
+    width: 100%;
+    background-color: var(--color);
+    margin-bottom: 45px;
+  }
+  &-item {
+    display: flex;
+    gap: 33px;
+    &:first-child {
+      margin-bottom: 29px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & h5 {
+      max-width: 314px;
+      margin-bottom: 45px;
+      line-height: 1.5;
+    }
+  }
+  & h4 {
+    max-width: 122px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 15.52px;
+    letter-spacing: 0.075em;
+  }
+}
+
+.credits.open {
+  display: block;
+  animation: HireOpen 2s forwards;
+}
+.credits.close {
+  display: block;
+  animation: HireClose 2s forwards;
+}

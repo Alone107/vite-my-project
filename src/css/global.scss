@@ -1,0 +1,63 @@
+@import 'keyframes.scss';
+
+body {
+  font-family: 'Iceland', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--white);
+  font-size: var(--title);
+  line-height: 21.55px;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  overflow: hidden;
+  perspective: 1000px;
+  background-color: #000003;
+}
+.disabled {
+  opacity: 0;
+  visibility: hidden;
+  display: none !important;
+}
+
+.wrapper {
+  padding: 0 80px;
+  background-color: #000003;
+  height: 100vh;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: fixed; /* Абсолютное позиционирование */
+    right: 0;
+    top: 0; /* Положение треугольника */
+    width: 0px;
+    height: 0px;
+
+    border-top-width: 450px;
+    border-top-style: solid;
+    border-left-width: 290px;
+    border-left-style: solid;
+    border-image: linear-gradient(
+      242.06deg,
+      rgba(232, 74, 74, 0.33) 0%,
+      rgba(232, 74, 74, 0) 46.83%
+    );
+  }
+}
+
+.wrapper.move {
+  animation: MoveSection 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+.wrapper.close {
+  animation: MoveSectionClose 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    forwards;
+}
+
+.wrapper.down-open {
+  animation: MoveDownSection 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+.wrapper.down-close {
+  animation: MoveDownSectionClose 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    forwards;
+}

@@ -1,0 +1,152 @@
+@keyframes GearMove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes WelcomeClose {
+  to {
+    transform: translateY(-1000px);
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+@keyframes textMove {
+  25% {
+    transform: rotateZ(-3deg);
+  }
+  50% {
+    transform: rotateZ(0deg);
+  }
+  75% {
+    transform: rotateZ(3deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes MoveSection {
+  to {
+    transform-origin: right;
+    transform: rotateY(-45deg) translateX(80px);
+  }
+}
+@keyframes MoveSectionClose {
+  from {
+    transform-origin: right;
+    transform: rotateY(-45deg) translateX(80px);
+  }
+  to {
+    transform-origin: right;
+    transform: rotateY(0deg) translateX(0px);
+  }
+}
+
+@keyframes HireOpen {
+  to {
+    transform: translate(30%, -116%);
+  }
+}
+
+@keyframes HireClose {
+  from {
+    transform: translate(30%, -116%);
+  }
+  to {
+    transform: translate(30%, 20%);
+  }
+}
+
+@keyframes hide {
+  from {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+  to {
+    transform-origin: right;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    max-width: 0;
+    transform: scaleX(0);
+    display: none;
+  }
+}
+
+@keyframes open {
+  from {
+    transform-origin: right;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes open1 {
+  from {
+    transform-origin: left;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleX(0);
+  }
+  to {
+    transform-origin: left;
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes SettingsOpen {
+  from {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes SettingsClose {
+  from {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+  }
+}
+
+@keyframes MoveDownSection {
+  to {
+    transform-origin: bottom;
+    transform: rotateX(45deg) translateY(45px);
+  }
+}
+@keyframes MoveDownSectionClose {
+  from {
+    transform-origin: bottom;
+    transform: rotateX(45deg) translateY(45px);
+  }
+  to {
+    transform-origin: bottom;
+    transform: rotateX(0deg) translateY(0px);
+  }
+}

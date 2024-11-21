@@ -1,0 +1,73 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  &-left {
+    display: flex;
+    gap: 45px;
+    &-level {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+    &-coins {
+      display: flex;
+      align-items: center;
+      & span {
+        margin-right: 6px;
+      }
+    }
+    & span {
+      font-family: $big;
+      font-weight: $big-fw;
+      color: $green;
+      line-height: 31.12px;
+      font-size: 26px;
+    }
+    & p {
+      font-family: $big;
+      font-weight: $big-fw;
+      line-height: 19.15px;
+      font-size: 16px;
+    }
+    &-svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 33px;
+      height: 33px;
+      max-width: 100%;
+      border: 1px solid #ffffff4a;
+      margin-right: 13px;
+      cursor: pointer;
+      padding: 11px 10px 11px 12px;
+    }
+    & svg path {
+      fill: var(--color);
+    }
+  }
+  &-right {
+    display: flex;
+    gap: 27px;
+    align-items: center;
+    & a {
+      font-size: 12px;
+      line-height: 14.64px;
+      transition: $transition;
+      &:hover {
+        text-decoration: underline;
+        transform: scale(1.2);
+      }
+    }
+    & p {
+      font-size: var(--text);
+      line-height: 13.58px;
+      color: $gray;
+    }
+    & span {
+      color: var(--white);
+    }
+  }
+}

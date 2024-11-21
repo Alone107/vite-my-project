@@ -1,0 +1,217 @@
+@import 'keyframes.scss';
+
+.quest {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &-inner {
+    border-left: 2px solid var(--color);
+    max-width: 196px;
+    margin-bottom: 200px;
+    z-index: 10;
+    &-btn-one {
+      display: block;
+      font-family: $big;
+      font-size: var(--title);
+      font-weight: $big-fw;
+      line-height: 21.55px;
+      letter-spacing: 0.075em;
+      max-width: 196px;
+      width: 100%;
+      background-color: var(--color-background);
+      text-align: left;
+      text-transform: uppercase;
+      padding: 1px 0 1px 8px;
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      z-index: 5;
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+      }
+    }
+    &-btn-two {
+      position: relative;
+      z-index: 5;
+      font-family: Iceland;
+      font-size: var(--text);
+      font-weight: 400;
+      line-height: 13.58px;
+      text-align: left;
+      color: $gray;
+      text-transform: uppercase;
+      max-width: 196px;
+      width: 100%;
+      padding: 8px 10px 8px 8px;
+      background: linear-gradient(
+        242.06deg,
+        var(--color-background) 0%,
+        rgba(232, 74, 74, 0) 115.83%
+      );
+      margin-bottom: 15px;
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+      }
+    }
+    & h3 {
+      line-height: 13.58px;
+      margin-left: 8px;
+      margin-bottom: 4px;
+    }
+    & h4 {
+      color: var(--color);
+      font-family: $big;
+      font-size: var(--title);
+      font-weight: $big-fw;
+      line-height: 21.55px;
+      margin-left: 8px;
+      margin-bottom: 23px;
+    }
+    & p {
+      color: $gray;
+      font-size: var(--text);
+      line-height: 13.58px;
+      margin-left: 8px;
+      margin-bottom: 23px;
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+      }
+    }
+  }
+  &-reward {
+    margin-left: 8px;
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    & div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & img {
+        z-index: 5;
+        cursor: pointer;
+        max-width: 100%;
+        transition: $transition;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      & span {
+        font-size: var(--text);
+        line-height: 13.58px;
+        color: $gray;
+      }
+    }
+  }
+  &-setting {
+    z-index: 6;
+    max-width: 194px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    & span {
+      font-family: $big;
+      font-weight: $big-fw;
+      line-height: 21.55px;
+      color: var(--color);
+    }
+    &-sound {
+      width: 100%;
+      z-index: 5;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: $transition;
+      & span {
+        transition: $transition;
+      }
+      &:hover span {
+        color: var(--white);
+      }
+      &:hover path {
+        fill: var(--white);
+      }
+      &:hover div {
+        border-color: var(--white);
+      }
+      & div {
+        border: 1px solid var(--color);
+        width: 33px;
+        height: 33px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+        & svg {
+          transition: $transition;
+        }
+        & svg path {
+          fill: var(--color);
+          transition: $transition;
+        }
+      }
+    }
+    &-music {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #262626;
+        width: 33px;
+        height: 33px;
+        & svg path {
+          fill: var(--color);
+        }
+      }
+    }
+    &-visual {
+      cursor: pointer;
+      padding: 5px 4px 4px 7px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid #262626;
+      transition: $transition;
+      &:hover {
+        color: var(--white);
+        border-color: var(--white);
+      }
+      &:hover path {
+        fill: var(--white);
+      }
+      & span {
+        margin-bottom: -1px;
+        transition: $transition;
+        &:hover {
+          color: var(--white);
+        }
+      }
+      & svg {
+        animation: GearMove 10s infinite;
+      }
+      & svg path {
+        transition: $transition;
+        fill: var(--color);
+      }
+    }
+  }
+}
+
+.inactive {
+  opacity: 0.5;
+}
+
+.check--disable {
+  opacity: 0;
+  visibility: hidden;
+}
